@@ -51,14 +51,17 @@ Key API Endpoints
 
 Authentication:
 
-POST	/api/token/   Obtain Access & Refresh tokens ||
-POST  /api/register/    Register a new employee account ||
+POST	/api/token/   Obtain Access & Refresh tokens 
+
+POST  /api/register/    Register a new employee account 
 
 Core Services
 
-GET	  /api/menu/today/	  List all menus available for the current date ||
-POST	/api/vote/	  Submit a vote for a specific restaurant menu ||
-GET	  /api/results/   Real-time voting leaderboard ||
+GET	  /api/menu/today/	  List all menus available for the current date 
+
+POST	/api/vote/	  Submit a vote for a specific restaurant menu 
+
+GET	  /api/results/   Real-time voting leaderboard 
 
 ---
 
