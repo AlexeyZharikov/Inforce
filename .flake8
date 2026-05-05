@@ -1,0 +1,14 @@
+[flake8]
+# Игнорируем папки, которые не мы писали
+exclude = 
+    .git,
+    __pycache__,
+    venv,
+    env,
+    migrations,
+    manage.py,
+    settings.py
+
+    max-line-length = 100
+
+ignore = F401
