@@ -29,7 +29,7 @@ Ensure you have **Docker** and **Docker Compose** installed. Create a `.env` fil
 Build and launch the entire infrastructure (API + PostgreSQL) with a single command in Terminal:
 
 ```
-   docker-compose up --build
+docker-compose up --build
 ```
 
 The service will be available at: http://localhost:8000/
@@ -38,13 +38,13 @@ The service will be available at: http://localhost:8000/
 Create a superuser to manage restaurants and menus via the Django Admin panel:
  
 ```   
-    docker-compose exec web python manage.py createsuperuser
+docker-compose exec web python manage.py createsuperuser
 ```
 
 Running Tests run command:
 
 ```
-    docker-compose exec web pytest
+docker-compose exec web pytest
 ```
 
 Static Analysis (Linter) run command:
@@ -78,5 +78,5 @@ Versioning
 
 To access version-specific logic, include the following header in your requests:
 ```
-        X-Build-Version: 2.0
+X-Build-Version: 2.0
 ```    
