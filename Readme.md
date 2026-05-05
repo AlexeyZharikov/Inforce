@@ -28,44 +28,55 @@ Ensure you have **Docker** and **Docker Compose** installed. Create a `.env` fil
 2. Quick Start
 Build and launch the entire infrastructure (API + PostgreSQL) with a single command in Terminal:
 
-    docker-compose up --build
+```
+   docker-compose up --build
+```
 
 The service will be available at: http://localhost:8000/
 
 3. Administrative Setup
 Create a superuser to manage restaurants and menus via the Django Admin panel:
-    
+ 
+```   
     docker-compose exec web python manage.py createsuperuser
+```
 
 Running Tests run command:
 
+```
     docker-compose exec web pytest
+```
 
 Static Analysis (Linter) run command:
 
+```
     flake8 .
+```
 
 ---
 
 Key API Endpoints
 
 Authentication:
-
+```
 POST	/api/token/   Obtain Access & Refresh tokens 
 
 POST  /api/register/    Register a new employee account 
-
+```
 Core Services
-
+```
 GET	  /api/menu/today/	  List all menus available for the current date 
 
 POST	/api/vote/	  Submit a vote for a specific restaurant menu 
 
 GET	  /api/results/   Real-time voting leaderboard 
+```
 
 ---
 
 Versioning
 
 To access version-specific logic, include the following header in your requests:
-X-Build-Version: 2.0
+```
+        X-Build-Version: 2.0
+```    
