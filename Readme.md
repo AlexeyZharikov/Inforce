@@ -50,7 +50,7 @@ docker-compose exec web pytest
 Static Analysis (Linter) run command:
 
 ```
-    flake8 .
+flake8 .
 ```
 
 ---
