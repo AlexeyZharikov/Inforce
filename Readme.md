@@ -31,6 +31,7 @@ Build and launch the entire infrastructure (API + PostgreSQL) with a single comm
     docker-compose up --build
 
 The service will be available at: http://localhost:8000/
+
 3. Administrative Setup
 Create a superuser to manage restaurants and menus via the Django Admin panel:
     
@@ -50,14 +51,14 @@ Key API Endpoints
 
 Authentication:
 
-POST	/api/token/   Obtain Access & Refresh tokens
-POST  /api/register/    Register a new employee account
+POST	/api/token/   Obtain Access & Refresh tokens ||
+POST  /api/register/    Register a new employee account ||
 
 Core Services
 
-GET	  /api/menu/today/	  List all menus available for the current date
-POST	/api/vote/	  Submit a vote for a specific restaurant menu
-GET	  /api/results/   Real-time voting leaderboard
+GET	  /api/menu/today/	  List all menus available for the current date ||
+POST	/api/vote/	  Submit a vote for a specific restaurant menu ||
+GET	  /api/results/   Real-time voting leaderboard ||
 
 ---
 
